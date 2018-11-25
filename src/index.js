@@ -1,5 +1,6 @@
 import _ from 'lodash';
-import './style.css'
+import './style.css';
+import Icon from './Rubiks-Cube-Gif.gif'
 
 function component() {
   var element = document.createElement('div');
@@ -7,6 +8,10 @@ function component() {
   // Lodash, now imported by this script
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
   element.classList.add('hello');
+  var myIcon = new Image();
+  myIcon.src = Icon;
+  element.appendChild(myIcon);
+
   return element;
 }
 
