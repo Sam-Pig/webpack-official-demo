@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './style.css';
-import Icon from './Rubiks-Cube-Gif.gif'
+import Icon from './Rubiks-Cube-Gif.gif';
+import Data from './data.xml';
 
 function component() {
   var element = document.createElement('div');
@@ -11,6 +12,8 @@ function component() {
   var myIcon = new Image();
   myIcon.src = Icon;
   element.appendChild(myIcon);
+
+  console.log(Data);
 
   return element;
 }
